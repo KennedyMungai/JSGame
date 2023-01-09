@@ -6,3 +6,8 @@ const CANVAS_HEIGHT = canvas.height = 600
 
 const playerImage = new Image()
 playerImage.src = './images/shadow_dog.png'
+
+const animate = () =>
+{
+
+}
