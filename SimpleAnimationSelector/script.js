@@ -17,6 +17,21 @@ const playerImage = new Image()
 playerImage.src = './images/shadow_dog.png'
 
 const spriteAnimations = []
+const animationStates = [
+    {
+        name: 'idle',
+        frames: 7
+    },
+    {
+        name: 'jump',
+        frames: 7
+    }
+]
+
+animationStates.forEach((state) =>
+{
+
+})
 
 const animate = () =>
 {
