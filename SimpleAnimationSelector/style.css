@@ -10,7 +10,7 @@
 .controls {
     position: absolute;
     z-index: 10;
-    top: 50%;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
 }
