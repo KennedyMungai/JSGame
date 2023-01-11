@@ -48,6 +48,7 @@ const animate = () =>
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
     let position = Math.floor(gameFrame / staggerFrames) % spriteAnimations['idle'].loc.length
     let frameX = spriteWidth * position
+    let frameY = spriteAnimations["idle"].loc[position].y
     ctx.drawImage(playerImage, frameX, frameY * spriteHeight, spriteWidth, spriteHeight, 0, 0, spriteWidth, spriteHeight)
     gameFrame++
 
