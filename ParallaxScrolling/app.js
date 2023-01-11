@@ -15,10 +15,12 @@ backgroundLayer4.src = './images/background/layer-4.png'
 const backgroundLayer5 = new Image()
 backgroundLayer5.src = './images/background/layer-5.png'
 
+let x = 0
+
 const animate = () =>
 {
     ctx.drawImage(backgroundLayer4, 0, 0)
-
+    x--
     requestAnimationFrame(animate)
 }
 
