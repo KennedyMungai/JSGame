@@ -16,6 +16,8 @@ const staggerFrames = 5
 const playerImage = new Image()
 playerImage.src = './images/shadow_dog.png'
 
+const spriteAnimations = []
+
 const animate = () =>
 {
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
