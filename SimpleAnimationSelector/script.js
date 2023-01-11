@@ -25,7 +25,7 @@ const animationStates = [
     },
     {
         name: 'fall',
-        frames: 9
+        frames: 7
     },
     {
         name: 'run',
