@@ -11,6 +11,7 @@ let frameX = 0
 let frameY = 0
 
 let gameFrame = 0
+const staggerFrames = 5
 
 const playerImage = new Image()
 playerImage.src = './images/shadow_dog.png'
@@ -25,7 +26,7 @@ const animate = () =>
 
     gameFrame++
 
-    if (gameFrame % 23 === 0)
+    if (gameFrame % staggerFrames === 0)
     {
         if (frameX < 6)
         {
