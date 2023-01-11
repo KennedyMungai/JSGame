@@ -26,7 +26,7 @@ const animate = () =>
 
     if (x < -2400)
     {
-        x = 2400 - gameSpeed
+        x = 2400 + x2 - gameSpeed
     }
     else
     {
@@ -35,7 +35,7 @@ const animate = () =>
 
     if (x2 < -2400)
     {
-        x2 = 2400 - gameSpeed
+        x2 = 2400 + x - gameSpeed
     }
     else
     {
