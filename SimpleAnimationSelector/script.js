@@ -23,18 +23,6 @@ const animate = () =>
     requestAnimationFrame(animate)
 
     gameFrame++
-
-    // if (gameFrame % staggerFrames === 0)
-    // {
-    //     if (frameX < 6)
-    //     {
-    //         frameX++
-    //     }
-    //     else
-    //     {
-    //         frameX = 0
-    //     }
-    // }
 }
 
 animate()
