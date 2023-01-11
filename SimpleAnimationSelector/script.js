@@ -1,3 +1,5 @@
+let playerState = 'run'
+
 const canvas = document.getElementById('canvas1')
 const ctx = canvas.getContext('2d')
 
@@ -10,7 +12,6 @@ const spriteHeight = 523
 let gameFrame = 0
 const staggerFrames = 5
 
-let playerState = 'run'
 
 const playerImage = new Image()
 playerImage.src = './images/shadow_dog.png'
