@@ -20,10 +20,11 @@ const animate = () =>
 {
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
     let position = Math.floor(gameFrame / staggerFrames) % 6
+    frameX = spriteWidth * position
     ctx.drawImage(playerImage, frameX * spriteWidth, frameY * spriteHeight, spriteWidth, spriteHeight, 0, 0, spriteWidth, spriteHeight)
-    requestAnimationFrame(animate)
-
     gameFrame++
+
+    requestAnimationFrame(animate)
 }
 
 animate()
