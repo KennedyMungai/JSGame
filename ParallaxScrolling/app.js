@@ -21,7 +21,7 @@ const animate = () =>
 {
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
     ctx.drawImage(backgroundLayer4, x, 0)
-    x--
+    x -= gameSpeed
     requestAnimationFrame(animate)
 }
 
