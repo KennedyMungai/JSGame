@@ -19,6 +19,7 @@ playerImage.src = './images/shadow_dog.png'
 const animate = () =>
 {
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
+    let position = Math.floor(gameFrame / staggerFrames) % 6
     ctx.drawImage(playerImage, frameX * spriteWidth, frameY * spriteHeight, spriteWidth, spriteHeight, 0, 0, spriteWidth, spriteHeight)
     requestAnimationFrame(animate)
 
