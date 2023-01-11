@@ -10,6 +10,8 @@ const spriteHeight = 523
 let frameX = 0
 let frameY = 0
 
+let gameFrame = 0
+
 const playerImage = new Image()
 playerImage.src = './images/shadow_dog.png'
 
