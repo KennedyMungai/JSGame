@@ -5,3 +5,4 @@ const CANVAS_HEIGHT = canvas.height = 700
 let gameSpeed = 5
 
 const backgroundLayer1 = new Image()
+backgroundLayer1.src = './images/background/layer-1.png'
