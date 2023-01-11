@@ -14,3 +14,10 @@ const backgroundLayer4 = new Image()
 backgroundLayer1.src = './images/background/layer-4.png'
 const backgroundLayer5 = new Image()
 backgroundLayer1.src = './images/background/layer-5.png'
+
+const animate = () =>
+{
+    drawImage(backgroundLayer1, 0, 0)
+
+    requestAnimationFrame(animate)
+}
