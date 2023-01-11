@@ -19,7 +19,8 @@ let x = 0
 
 const animate = () =>
 {
-    ctx.drawImage(backgroundLayer4, 0, 0)
+    ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
+    ctx.drawImage(backgroundLayer4, x, 0)
     x--
     requestAnimationFrame(animate)
 }
