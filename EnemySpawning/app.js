@@ -53,6 +53,7 @@ const animate = () =>
         enemy.update()
         enemy.draw()
     })
+    gameFrame++
 
     requestAnimationFrame(animate)
 }
