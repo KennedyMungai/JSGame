@@ -18,6 +18,8 @@ class Enemy
         this.width = 100
         this.height = 100
         this.speed = Math.random() * 4 - 2
+        this.spriteWidth = 293
+        this.spriteHeight = 155
     }
 
     update()
