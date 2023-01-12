@@ -11,6 +11,11 @@ const CANVAS_HEIGHT = canvas.height = 500
 //     height: 100
 // }
 
+class Enemy 
+{
+
+}
+
 const animate = () => 
 {
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
