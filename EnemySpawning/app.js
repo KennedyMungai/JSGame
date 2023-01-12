@@ -19,6 +19,11 @@ class Enemy
         this.x++
         this.y++
     }
+
+    draw()
+    {
+        ctx.fillRect(this.x, this.y, this.width, this.height)
+    }
 }
 
 const enemy1 = new Enemy()
