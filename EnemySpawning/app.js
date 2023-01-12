@@ -14,6 +14,7 @@ class Enemy
         this.y = Math.random() * CANVAS_HEIGHT
         this.width = 100
         this.height = 100
+        this.speed = Math.random() * 4 - 2
     }
 
     update()
