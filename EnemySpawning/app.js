@@ -38,7 +38,6 @@ class Enemy
 
     draw()
     {
-        ctx.strokeRect(this.x, this.y, this.width, this.height)
         ctx.drawImage(enemyImage, this.frame * this.spriteWidth, 0, this.spriteWidth, this.spriteHeight, this.x, this.y, this.width, this.height)
     }
 }
