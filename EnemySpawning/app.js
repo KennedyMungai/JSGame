@@ -13,6 +13,7 @@ enemy1 = {
 
 const animate = () => 
 {
+    ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
     enemy1.x++
     ctx.fillRect(enemy1.x, enemy1.y, enemy1.width, enemy1.height)
 
