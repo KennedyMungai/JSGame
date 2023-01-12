@@ -4,6 +4,8 @@ const CANVAS_WIDTH = canvas.width = 800
 const CANVAS_HEIGHT = canvas.height = 700
 let gameSpeed = 10
 
+const slider = document.getElementById('slider')
+
 const backgroundLayer1 = new Image()
 backgroundLayer1.src = './images/background/layer-1.png'
 const backgroundLayer2 = new Image()
