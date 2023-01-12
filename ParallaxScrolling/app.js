@@ -17,7 +17,17 @@ backgroundLayer5.src = './images/background/layer-5.png'
 
 class Layer
 {
-
+    constructor(image, speedModifier)
+    {
+        this.x = 0
+        this.y = 0
+        this.width = 4200
+        this.height = 700
+        this.x2 = this.width
+        this.image = image
+        this.speedModifier = speedModifier
+        this.speed = gameSpeed * this.speedModifier
+    }
 }
 
 const animate = () =>
