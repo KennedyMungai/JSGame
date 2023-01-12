@@ -13,7 +13,10 @@ enemy1 = {
 
 const animate = () => 
 {
+    enemy1.x++
     ctx.fillRect(enemy1.x, enemy1.y, enemy1.width, enemy1.height)
+
+    requestAnimationFrame(animate)
 }
 
 animate()
