@@ -96,7 +96,7 @@ class Enemy
     update()
     {
         this.x -= this.speed
-        this.y += Math.sin(this.angle)
+        this.y += 3 * Math.sin(this.angle)
         this.angle += this.angleSpeed
         // animate frames
 
