@@ -169,7 +169,7 @@ class Enemy
 
     update()
     {
-        this.x = this.curve * Math.sin(this.angle * Math.PI / 180) + CANVAS_WIDTH / 2
+        this.x = this.curve * Math.sin(this.angle * Math.PI / 180) + (CANVAS_WIDTH / 2 - this.width / 2)
         this.width
         // this.y += this.curve * Math.sin(this.angle)
         this.angle += this.angleSpeed
