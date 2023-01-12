@@ -235,9 +235,6 @@ class Enemy
         this.y = Math.random() * (CANVAS_HEIGHT - this.height)
         this.frame = 0
         this.flapSpeed = Math.floor(Math.random() * 3 + 1)
-        this.angle = 0
-        this.angleSpeed = Math.random() * 0.2 + 0.5
-        this.curve = Math.random() * 200 + 50
     }
 
     update()
