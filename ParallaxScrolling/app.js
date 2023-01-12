@@ -3,7 +3,7 @@ const ctx = canvas.getContext('2d')
 const CANVAS_WIDTH = canvas.width = 800
 const CANVAS_HEIGHT = canvas.height = 700
 let gameSpeed = 10
-let gameFrame = 0
+// let gameFrame = 0
 
 const slider = document.getElementById('slider')
 slider.value = gameSpeed
@@ -89,7 +89,7 @@ const animate = () =>
         object.draw()
     })
 
-    gameFrame--
+    // gameFrame--
     requestAnimationFrame(animate)
 }
 
