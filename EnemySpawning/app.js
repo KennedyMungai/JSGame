@@ -241,8 +241,16 @@ class Enemy
 
     update()
     {
-        this.x = 0
-        this.y = 0
+        if (gameFrame % 30 === 0)
+        {
+            this.newX = Math.random() * (CANVAS_WIDTH - this.width)
+            this.newY = Math.random() * (CANVAS_HEIGHT - this.height)
+        }
+
+        let dx = this.x - this.newX
+
+        // this.x = 0
+        // this.y = 0
         this.angle += this.angleSpeed
         // animate frames
 
