@@ -96,7 +96,7 @@ class Enemy
     {
         this.x -= this.speed
         this.y += Math.sin(this.angle)
-        this.angle++
+        this.angle += 0.1
         // animate frames
 
         if (this.x + this.width < 0) this.x = canvas.width
