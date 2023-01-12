@@ -15,11 +15,11 @@ class Enemy
     {
         this.x = Math.random() * CANVAS_WIDTH
         this.y = Math.random() * CANVAS_HEIGHT
-        this.width = 100
-        this.height = 100
         this.speed = Math.random() * 4 - 2
         this.spriteWidth = 83
         this.spriteHeight = 44
+        this.width = this.spriteWidth / 2
+        this.height = this.spriteHeight / 2
     }
 
     update()
