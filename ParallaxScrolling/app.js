@@ -33,7 +33,7 @@ class Layer
         this.y = 0
         this.width = 4200
         this.height = 700
-        this.x2 = this.width
+        // this.x2 = this.width
         this.image = image
         this.speedModifier = speedModifier
         this.speed = gameSpeed * this.speedModifier
