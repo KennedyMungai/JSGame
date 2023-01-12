@@ -18,8 +18,8 @@ class Enemy
         this.width = 100
         this.height = 100
         this.speed = Math.random() * 4 - 2
-        this.spriteWidth = 293
-        this.spriteHeight = 155
+        this.spriteWidth = 83
+        this.spriteHeight = 44
     }
 
     update()
@@ -31,7 +31,7 @@ class Enemy
     draw()
     {
         ctx.strokeRect(this.x, this.y, this.width, this.height)
-        ctx.drawImage(enemyImage, this.x, this.y, this.width, this.height)
+        ctx.drawImage(enemyImage, 0, 0, this.spriteWidth, this.spriteHeight, this.x, this.y, this.width, this.height)
     }
 }
 
