@@ -8,6 +8,10 @@ const slider = document.getElementById('slider')
 slider.value = gameSpeed
 const showGameSpeed = document.getElementById('showGameSpeed')
 showGameSpeed.innerHTML = gameSpeed
+slider.addEventListener('change', (e) =>
+{
+    console.log(e.target.value)
+})
 
 const backgroundLayer1 = new Image()
 backgroundLayer1.src = './images/background/layer-1.png'
