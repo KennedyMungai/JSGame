@@ -7,6 +7,7 @@ const numberOfEnemies = 100
 const enemiesArray = []
 
 const enemyImage = new Image()
+enemyImage.src = './images/enemy_1.png'
 
 class Enemy 
 {
