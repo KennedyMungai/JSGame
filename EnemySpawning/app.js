@@ -26,6 +26,7 @@ class Enemy
     {
         this.x += this.speed
         this.y += this.speed
+        // animate frames
     }
 
     draw()
