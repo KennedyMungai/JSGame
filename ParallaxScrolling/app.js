@@ -48,13 +48,13 @@ class Layer
             this.x = this.width + this.x2 - this.speed
         }
 
-        if (this.x2 <= -this.width)
-        {
-            this.x2 = this.width + this.x - this.speed
-        }
+        // if (this.x2 <= -this.width)
+        // {
+        //     this.x2 = this.width + this.x - this.speed
+        // }
 
         this.x = Math.floor(this.x - this.speed)
-        this.x2 = Math.floor(this.x2 - this.speed)
+        // this.x2 = Math.floor(this.x2 - this.speed)
     }
 
     draw()
