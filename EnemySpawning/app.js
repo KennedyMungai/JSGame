@@ -250,8 +250,8 @@ class Enemy
         let dx = this.x - this.newX
         let dy = this.y - this.newY
 
-        this.x -= dx
-        this.y -= dy
+        this.x -= dx / 60
+        this.y -= dy / 60
 
         // this.x = 0
         // this.y = 0
