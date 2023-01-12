@@ -8,6 +8,7 @@ const enemiesArray = []
 
 const enemyImage = new Image()
 enemyImage.src = './images/enemy_bat_1.png'
+let gameFrame = 0
 
 class Enemy 
 {
