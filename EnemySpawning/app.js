@@ -22,6 +22,7 @@ class Enemy
         this.width = this.spriteWidth / 2
         this.height = this.spriteHeight / 2
         this.frame = 0
+        this.flapSpeed = Math.random() * 3 + 1
     }
 
     update()
