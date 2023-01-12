@@ -6,14 +6,14 @@ const CANVAS_HEIGHT = canvas.height = 500
 const numberOfEnemies = 100
 const enemiesArray = []
 
-const enemyImage = new Image()
-enemyImage.src = './images/enemy_bat_1.png'
 let gameFrame = 0
 
 class Enemy 
 {
     constructor()
     {
+        this.image = new Image()
+        this.image.src = './images/enemy_bat_1.png'
         this.x = Math.random() * CANVAS_WIDTH
         this.y = Math.random() * CANVAS_HEIGHT
         this.speed = Math.random() * 4 - 2
