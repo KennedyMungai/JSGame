@@ -6,6 +6,8 @@ const CANVAS_HEIGHT = canvas.height = 500
 const numberOfEnemies = 100
 const enemiesArray = []
 
+const enemyImage = new Image()
+
 class Enemy 
 {
     constructor()
