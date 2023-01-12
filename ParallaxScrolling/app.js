@@ -45,7 +45,7 @@ class Layer
 
         if (this.x <= -this.width)
         {
-            this.x = this.width - this.speed
+            this.x = 0
         }
 
         // if (this.x2 <= -this.width)
