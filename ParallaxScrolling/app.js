@@ -15,6 +15,11 @@ backgroundLayer4.src = './images/background/layer-4.png'
 const backgroundLayer5 = new Image()
 backgroundLayer5.src = './images/background/layer-5.png'
 
+class Layer
+{
+
+}
+
 const animate = () =>
 {
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
