@@ -71,16 +71,11 @@ const gameObjects = [
 const animate = () =>
 {
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
-    layer1.update()
-    layer1.draw()
-    layer2.update()
-    layer2.draw()
-    layer3.update()
-    layer3.draw()
-    layer4.update()
-    layer4.draw()
-    layer5.update()
-    layer5.draw()
+    gameObjects.forEach((object) =>
+    {
+        object.update()
+        object.draw()
+    })
 
     requestAnimationFrame(animate)
 }
