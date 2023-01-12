@@ -60,6 +60,14 @@ const layer3 = new Layer(backgroundLayer3, 0.3)
 const layer4 = new Layer(backgroundLayer4, 0.4)
 const layer5 = new Layer(backgroundLayer5, 1)
 
+const gameObjects = [
+    layer1,
+    layer2,
+    layer3,
+    layer4,
+    layer5
+]
+
 const animate = () =>
 {
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
