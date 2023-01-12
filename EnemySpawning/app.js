@@ -95,7 +95,8 @@ class Enemy
     update()
     {
         this.x -= this.speed
-        // this.y += Math.random() * 5 - 2.5
+        this.y += Math.sin(this.angle)
+        this.angle++
         // animate frames
 
         if (this.x + this.width < 0) this.x = canvas.width
