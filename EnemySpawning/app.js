@@ -29,7 +29,10 @@ class Enemy
         this.x += this.speed
         this.y += this.speed
         // animate frames
-        this.frame > 4 ? this.frame = 0 : this.frame++
+        if (gameFrame % 2 === 0)
+        {
+            this.frame > 4 ? this.frame = 0 : this.frame++
+        }
     }
 
     draw()
