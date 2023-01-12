@@ -248,6 +248,7 @@ class Enemy
         }
 
         let dx = this.x - this.newX
+        let dy = this.y - this.newY
 
         // this.x = 0
         // this.y = 0
