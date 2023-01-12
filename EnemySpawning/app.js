@@ -250,6 +250,9 @@ class Enemy
         let dx = this.x - this.newX
         let dy = this.y - this.newY
 
+        this.x -= dx
+        this.y -= dy
+
         // this.x = 0
         // this.y = 0
         this.angle += this.angleSpeed
