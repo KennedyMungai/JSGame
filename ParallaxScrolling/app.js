@@ -54,7 +54,11 @@ class Layer
     }
 }
 
-const layer4 = new Layer(backgroundLayer4, 0.5)
+const layer1 = new Layer(backgroundLayer1, 1)
+const layer2 = new Layer(backgroundLayer2, 1)
+const layer3 = new Layer(backgroundLayer3, 1)
+const layer4 = new Layer(backgroundLayer4, 1)
+const layer5 = new Layer(backgroundLayer5, 1)
 
 const animate = () =>
 {
