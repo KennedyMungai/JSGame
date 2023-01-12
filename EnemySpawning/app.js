@@ -27,8 +27,8 @@ class Enemy
 
     update()
     {
-        this.x += this.speed
-        this.y += this.speed
+        this.x += Math.random() * 3
+        this.y += Math.random() * 3
         // animate frames
         if (gameFrame % this.flapSpeed === 0)
         {
