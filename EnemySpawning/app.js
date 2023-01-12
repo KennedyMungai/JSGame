@@ -28,12 +28,13 @@ class Enemy
         this.x += this.speed
         this.y += this.speed
         // animate frames
+        this.frame > 4 ? this.frame = 0 : this.frame++
     }
 
     draw()
     {
         ctx.strokeRect(this.x, this.y, this.width, this.height)
-        ctx.drawImage(enemyImage, 0, 0, this.frame * this.spriteWidth, this.spriteHeight, this.x, this.y, this.width, this.height)
+        ctx.drawImage(enemyImage, this.frame * this.spriteWidth, 0, this.spriteWidth, this.spriteHeight, this.x, this.y, this.width, this.height)
     }
 }
 
