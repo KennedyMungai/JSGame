@@ -28,8 +28,6 @@ class Enemy
     }
 }
 
-// const enemy1 = new Enemy()
-// const enemy2 = new Enemy()
 for (let i = 0; i < numberOfEnemies; i++)
 {
     enemiesArray.push(new Enemy())
