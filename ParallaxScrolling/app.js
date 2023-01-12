@@ -10,7 +10,7 @@ const showGameSpeed = document.getElementById('showGameSpeed')
 showGameSpeed.innerHTML = gameSpeed
 slider.addEventListener('change', (e) =>
 {
-    console.log(e.target.value)
+    gameSpeed = e.target.value
 })
 
 const backgroundLayer1 = new Image()
