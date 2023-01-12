@@ -25,7 +25,7 @@ class Enemy
 
     draw()
     {
-        ctx.fillRect(this.x, this.y, this.width, this.height)
+        ctx.strokeRect(this.x, this.y, this.width, this.height)
     }
 }
 
