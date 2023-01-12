@@ -56,6 +56,7 @@ class Layer
 
         this.x = Math.floor(this.x - this.speed)
         // this.x2 = Math.floor(this.x2 - this.speed)
+        this.x = gameFrame % this.width
     }
 
     draw()
@@ -88,7 +89,7 @@ const animate = () =>
         object.draw()
     })
 
-    gameFrame++
+    gameFrame--
     requestAnimationFrame(animate)
 }
 
