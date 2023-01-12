@@ -10,6 +10,7 @@ const showGameSpeed = document.getElementById('showGameSpeed')
 showGameSpeed.innerHTML = gameSpeed
 slider.addEventListener('change', (e) =>
 {
+    showGameSpeed.innerHTML = gameSpeed
     gameSpeed = e.target.value
 })
 
