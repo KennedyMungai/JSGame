@@ -90,6 +90,7 @@ class Enemy
         this.frame = 0
         this.flapSpeed = Math.floor(Math.random() * 3 + 1)
         this.angle = Math.random() * 2
+        this.angleSpeed = Math.random() * 0.2
     }
 
     update()
