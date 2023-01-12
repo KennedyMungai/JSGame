@@ -16,6 +16,7 @@ class Enemy
 }
 
 const enemy1 = new Enemy()
+const enemy2 = new Enemy()
 
 const animate = () => 
 {
