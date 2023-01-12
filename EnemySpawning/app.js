@@ -80,7 +80,7 @@ class Enemy
     {
         this.image = new Image()
         this.image.src = './images/enemy_bat_3.png'
-        // this.speed = Math.random() * 4 - 2
+        this.speed = Math.random() * 4 - 2
         this.spriteWidth = 265
         this.spriteHeight = 188
         this.width = this.spriteWidth / 2
