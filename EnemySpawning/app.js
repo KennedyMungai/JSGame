@@ -164,12 +164,13 @@ class Enemy
         this.flapSpeed = Math.floor(Math.random() * 3 + 1)
         this.angle = 0
         this.angleSpeed = Math.random() * 0.2
-        this.curve = Math.random() * 7
+        this.curve = Math.random() * 200
     }
 
     update()
     {
-        this.x = 250 * Math.sin(this.angle * Math.PI / 180) + CANVAS_WIDTH / 2
+        this.x = this.curve * Math.sin(this.angle * Math.PI / 180) + CANVAS_WIDTH / 2
+        this.width
         // this.y += this.curve * Math.sin(this.angle)
         this.angle += this.angleSpeed
         // animate frames
