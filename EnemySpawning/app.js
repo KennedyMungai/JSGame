@@ -10,3 +10,10 @@ enemy1 = {
     width: 200,
     height: 200
 }
+
+const animate = () => 
+{
+    ctx.fillRect(enemy1.x, enemy1.y, enemy1.width, enemy1.height)
+}
+
+animate()
