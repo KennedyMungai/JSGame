@@ -15,6 +15,8 @@ class Enemy
     }
 }
 
+const enemy1 = new Enemy()
+
 const animate = () => 
 {
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
