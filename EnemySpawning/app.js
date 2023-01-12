@@ -142,7 +142,7 @@ const canvas = document.getElementById('canvas1')
 const ctx = canvas.getContext('2d')
 const CANVAS_WIDTH = canvas.width = 600
 const CANVAS_HEIGHT = canvas.height = 500
-const numberOfEnemies = 50
+const numberOfEnemies = 20
 const enemiesArray = []
 
 let gameFrame = 0
