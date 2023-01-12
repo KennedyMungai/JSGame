@@ -239,8 +239,8 @@ class Enemy
 
     update()
     {
-        this.x = canvas.width / 2 * Math.sin(this.angle * Math.PI / 90) + (CANVAS_WIDTH / 2 - this.width / 2)
-        this.y = canvas.height / 2 * Math.cos(this.angle * Math.PI / 270) + (CANVAS_WIDTH / 2 - this.width / 2)
+        this.x = 0
+        this.y = 0
         this.angle += this.angleSpeed
         // animate frames
 
