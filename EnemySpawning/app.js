@@ -13,6 +13,12 @@ class Enemy
         this.width = 100
         this.height = 100
     }
+
+    update()
+    {
+        this.x++
+        this.y++
+    }
 }
 
 const enemy1 = new Enemy()
@@ -21,10 +27,7 @@ const enemy2 = new Enemy()
 const animate = () => 
 {
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
-    enemy1.x++
-    enemy1.y++
-    enemy2.x += 0.5
-    enemy2.y += 0.5
+    enemy1.update()
     ctx.fillRect(enemy1.x, enemy1.y, enemy1.width, enemy1.height)
     ctx.fillRect(enemy2.x, enemy2.y, enemy2.width, enemy2.height)
 
