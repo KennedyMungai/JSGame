@@ -19,8 +19,8 @@ class Enemy
 
     update()
     {
-        this.x++
-        this.y++
+        this.x += this.speed
+        this.y += this.speed
     }
 
     draw()
