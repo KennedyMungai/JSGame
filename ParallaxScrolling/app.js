@@ -56,7 +56,7 @@ class Layer
 
         this.x = Math.floor(this.x - this.speed)
         // this.x2 = Math.floor(this.x2 - this.speed)
-        this.x = gameFrame % this.width
+        this.x = gameFrame * this.speed % this.width
     }
 
     draw()
