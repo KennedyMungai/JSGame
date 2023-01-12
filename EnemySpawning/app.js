@@ -13,7 +13,13 @@ const CANVAS_HEIGHT = canvas.height = 500
 
 class Enemy 
 {
-
+    constructor()
+    {
+        this.x = 10
+        this.y = 50
+        this.width = 100
+        this.height = 100
+    }
 }
 
 const animate = () => 
