@@ -242,7 +242,7 @@ class Enemy
 
     update()
     {
-        if (gameFrame % 60 === 0)
+        if (gameFrame % this.interval === 0)
         {
             this.newX = Math.random() * (CANVAS_WIDTH - this.width)
             this.newY = Math.random() * (CANVAS_HEIGHT - this.height)
