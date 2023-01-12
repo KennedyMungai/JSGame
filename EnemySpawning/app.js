@@ -79,10 +79,10 @@ class Enemy
     constructor()
     {
         this.image = new Image()
-        this.image.src = './images/enemy_bat_1.png'
+        this.image.src = './images/enemy_bat_3.png'
         // this.speed = Math.random() * 4 - 2
-        this.spriteWidth = 83
-        this.spriteHeight = 44
+        this.spriteWidth = 265
+        this.spriteHeight = 188
         this.width = this.spriteWidth / 2
         this.height = this.spriteHeight / 2
         this.x = Math.random() * (CANVAS_WIDTH - this.width)
