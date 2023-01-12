@@ -30,7 +30,7 @@ class Enemy
         this.x += this.speed
         this.y += this.speed
         // animate frames
-        if (gameFrame % 2 === 0)
+        if (gameFrame % this.flapSpeed === 0)
         {
             this.frame > 4 ? this.frame = 0 : this.frame++
         }
