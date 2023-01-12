@@ -36,8 +36,8 @@ for (let i = 0; i < numberOfEnemies; i++)
 const animate = () => 
 {
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
-    enemy1.update()
-    enemy1.draw()
+    // enemy1.update()
+    // enemy1.draw()
 
     requestAnimationFrame(animate)
 }
