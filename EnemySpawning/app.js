@@ -4,6 +4,7 @@ const ctx = canvas.getContext('2d')
 const CANVAS_WIDTH = canvas.width = 600
 const CANVAS_HEIGHT = canvas.height = 500
 const numberOfEnemies = 100
+const enemiesArray = []
 
 class Enemy 
 {
@@ -31,7 +32,6 @@ class Enemy
 // const enemy2 = new Enemy()
 for (let i = 0; i < numberOfEnemies; i++)
 {
-    const element = array[i];
 
 }
 
