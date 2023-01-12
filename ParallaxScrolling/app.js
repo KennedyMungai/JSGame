@@ -28,6 +28,18 @@ class Layer
         this.speedModifier = speedModifier
         this.speed = gameSpeed * this.speedModifier
     }
+
+    update()
+    {
+
+    }
+
+    draw()
+    {
+
+    }
+
+
 }
 
 const animate = () =>
