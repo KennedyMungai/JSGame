@@ -30,7 +30,7 @@ class Raven
         this.frame = 0
         this.maxFrame = 4
         this.timeSinceFlap = 0
-        this.flapInterval = 100
+        this.flapInterval = Math.random() * 50 + 50
     }
 
     update(deltaTime)
@@ -54,6 +54,8 @@ class Raven
             {
                 this.frame++
             }
+
+            this.timeSinceFlap = 0
         }
 
         if (this.frame > this.maxFrame)
