@@ -46,6 +46,7 @@ const animate = (timestamp) =>
     if (timeToNextRaven > ravenInterval)
     {
         ravens.push(new Raven())
+        timeToNextRaven = 0
     }
 
     requestAnimationFrame(animate)
