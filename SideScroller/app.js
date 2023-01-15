@@ -108,7 +108,7 @@ class Explosion
         this.sound = new Audio()
         this.sound.src = '/SideScroller/SFX/boom.ogg'
         this.timeSinceLastFrame = 0
-        this.frameInterval = 500
+        this.frameInterval = 200
         this.markedForDeletion = false
     }
 
