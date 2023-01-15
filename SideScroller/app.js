@@ -15,8 +15,10 @@ class Raven
 {
     constructor()
     {
-        this.width = 100
-        this.height = 50
+        this.spriteWidth = 271
+        this.spriteHeight = 194
+        this.width = this.spriteWidth / 2
+        this.height = this.spriteHeight / 2
         this.x = canvas.width
         this.y = Math.random() * (canvas.height - this.height)
         this.directionX = Math.random() * 5 + 3
@@ -24,8 +26,6 @@ class Raven
         this.markedForDeletion = false
         this.image = new Image()
         this.image.src = '/SideScroller/images/raven.png'
-        this.spriteWidth = 271
-        this.spriteHeight = 194
     }
 
     update()
@@ -40,7 +40,7 @@ class Raven
 
     draw()
     {
-        ctx.drawImage(this.image, sx, sy, sw, sh, this.x, this.y, this.width, this.height)
+        ctx.drawImage(this.image, 0, 0, this.spriteWidth, this.spriteHeight, this.x, this.y, this.width, this.height)
     }
 }
 
