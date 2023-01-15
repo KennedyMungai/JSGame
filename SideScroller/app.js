@@ -152,6 +152,12 @@ const drawScore = () =>
     ctx.fillText('Score: ' + score, 50, 75)
 }
 
+const drawGameOver = () => 
+{
+    ctx.fillStyle = 'black'
+    ctx.fillText('GAME OVER, your score is ' + score, canvas.width / 2, canvas.height / 2)
+}
+
 window.addEventListener('click', (e) =>
 {
     const detectPixelColor = collisionCtx.getImageData(e.x, e.y, 1, 1)
@@ -213,6 +219,10 @@ const animate = (timestamp) =>
     if (!gameOver)
     {
         requestAnimationFrame(animate)
+    }
+    else
+    {
+        drawGameOver()
     }
 }
 
