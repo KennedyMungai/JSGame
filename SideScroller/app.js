@@ -194,6 +194,7 @@ class Particle
 
     draw()
     {
+        ctx.globalAlpha = 1
         ctx.beginPath()
         ctx.fillStyle = this.color
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
