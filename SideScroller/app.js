@@ -38,6 +38,7 @@ class Raven
         this.maxFrame = 4
         this.timeSinceFlap = 0
         this.flapInterval = Math.random() * 50 + 100
+        this.randomColors = [Math.floor(Math.random() * 255), Math.floor(Math.random() * 255), Math.floor(Math.random() * 255)]
     }
 
     update(deltaTime)
