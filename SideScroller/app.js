@@ -12,6 +12,7 @@ collisionCanvas.height = window.innerHeight
 
 let ravens = []
 let score = 0
+let gameOver = false
 
 let timeToNextRaven = 0
 let ravenInterval = 500
