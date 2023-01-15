@@ -168,8 +168,8 @@ class Particle
     constructor(x, y, size, color)
     {
         this.size = size
-        this.x = x
-        this.y = y
+        this.x = x + this.size / 2
+        this.y = y + this.size / 2
         this.radius = Math.random() * this.size / 10
         this.maxRadius = Math.random() * 20 + 35
         this.markedForDeletion = false
