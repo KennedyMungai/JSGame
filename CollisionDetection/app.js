@@ -25,5 +25,13 @@ class Explosions
         this.frame = 0
     }
 
+    update()
+    {
+        this.frame++
+    }
 
+    draw()
+    {
+        ctx.drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh)
+    }
 }
