@@ -49,6 +49,7 @@ const animate = (timestamp) =>
         timeToNextRaven = 0
     }
 
+    [...ravens].forEach(object => object.update())
     requestAnimationFrame(animate)
 }
 
