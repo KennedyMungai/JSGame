@@ -40,8 +40,6 @@ class Explosions
 
 window.addEventListener('click', (e) =>
 {
-    let positionX = e.x - canvasPosition.left - 25
-    let positionY = e.y - canvasPosition.top - 25
-    ctx.fillStyle = 'white'
-    ctx.fillRect(positionX, positionY, 50, 50)
+    let positionX = e.x - canvasPosition.left
+    let positionY = e.y - canvasPosition.top
 })
