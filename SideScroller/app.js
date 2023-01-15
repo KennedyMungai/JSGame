@@ -107,6 +107,8 @@ class Explosion
         this.frame = 0
         this.sound = new Audio()
         this.sound.src = '/SideScroller/SFX/boom.ogg'
+        this.timeSinceLastFrame = 0
+        this.frameInterval = 200
     }
 }
 
