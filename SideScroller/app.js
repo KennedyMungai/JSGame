@@ -159,6 +159,22 @@ const drawGameOver = () =>
     ctx.fillText('GAME OVER, your score is ' + score, canvas.width / 2, canvas.height / 2)
 }
 
+let particles = []
+
+class Particle
+{
+    constructor(x, y, size, color)
+    {
+        this.x = x
+        this.y = y
+        this.radius = Math.random() * this.size / 10
+        this.maxRadius = Math.random() * 20 + 35
+        this.markedForDeletion = false
+        this.speedX = Math.random() * 1 + 0.5
+        this.color = color
+    }
+}
+
 window.addEventListener('click', (e) =>
 {
     const detectPixelColor = collisionCtx.getImageData(e.x, e.y, 1, 1)
