@@ -81,6 +81,8 @@ class Raven
             }
 
             this.timeSinceFlap = 0
+
+            particles.push(new Particle(this.x, this.y, this.width, this.color))
         }
 
         if (this.x < 0 - this.width)
@@ -167,6 +169,7 @@ class Particle
     {
         this.x = x
         this.y = y
+        this.size = size
         this.radius = Math.random() * this.size / 10
         this.maxRadius = Math.random() * 20 + 35
         this.markedForDeletion = false
