@@ -173,6 +173,17 @@ class Particle
         this.speedX = Math.random() * 1 + 0.5
         this.color = color
     }
+
+    update()
+    {
+        this.x += this.speedX
+        this.radius += 0.2
+
+        if (this.radius > this.maxRadius)
+        {
+            this.markedForDeletion = true
+        }
+    }
 }
 
 window.addEventListener('click', (e) =>
