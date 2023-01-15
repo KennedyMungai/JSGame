@@ -40,7 +40,8 @@ class Raven
 
     draw()
     {
-        ctx.fillRect(this.x, this.y, this.width, this.height)
+        // ctx.fillRect(this.x, this.y, this.width, this.height)
+        ctx.drawImage(this.image, this.x, this.y, this.width, this.height)
     }
 }
 
