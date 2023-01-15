@@ -100,7 +100,7 @@ const drawScore = () =>
 window.addEventListener('click', (e) =>
 {
     const detectPixelColor = collisionCtx.getImageData(e.x, e.y, 1, 1)
-    console.log(detectPixelColor.data)
+    // console.log(detectPixelColor.data)
     const pc = detectPixelColor.data
 })
 
