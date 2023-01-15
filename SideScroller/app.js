@@ -24,6 +24,8 @@ class Raven
         this.markedForDeletion = false
         this.image = new Image()
         this.image.src = '/SideScroller/images/raven.png'
+        this.spriteWidth = 271
+        this.spriteHeight = 194
     }
 
     update()
