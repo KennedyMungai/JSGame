@@ -5,7 +5,7 @@ const ctx = canvas.getContext('2d')
 canvas.width = window.innerWidth
 canvas.height = window.innerHeight
 
-const collisionCanvas = document.getElementById('canvas1')
+const collisionCanvas = document.getElementById('collisionCanvas')
 const collisionCtx = canvas.getContext('2d')
 collisionCanvas.width = window.innerWidth
 collisionCanvas.height = window.innerHeight
