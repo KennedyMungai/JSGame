@@ -113,6 +113,11 @@ class Explosion
 
     update(deltaTime)
     {
+        if (this.frame === 0)
+        {
+            this.sound.play()
+        }
+
         this.timeSinceLastFrame += deltaTime
 
         if (this.timeSinceLastFrame > this.frameInterval)
