@@ -110,6 +110,16 @@ class Explosion
         this.timeSinceLastFrame = 0
         this.frameInterval = 200
     }
+
+    update(deltaTime)
+    {
+        this.timeSinceLastFrame += deltaTime
+
+        if (this.timeSinceLastFrame > this.frameInterval)
+        {
+            this.frame++
+        }
+    }
 }
 
 const drawScore = () => 
