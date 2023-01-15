@@ -41,7 +41,7 @@ class Raven
         this.flapInterval = Math.random() * 50 + 100
         this.randomColors = [Math.floor(Math.random() * 255), Math.floor(Math.random() * 255), Math.floor(Math.random() * 255)]
         this.color = 'rgb(' + this.randomColors[0] + ',' + this.randomColors[1] + ',' + this.randomColors[2] + ')'
-        this.hasTrail = false
+        this.hasTrail = Math.random() > 0.5 ? true : false;
     }
 
     update(deltaTime)
@@ -83,7 +83,10 @@ class Raven
 
             this.timeSinceFlap = 0
 
-            particles.push(new Particle(this.x, this.y, this.width, this.color))
+            if (this.hasTrail)
+            {
+                particles.push(new Particle(this.x, this.y, this.width, this.color))
+            }
         }
 
         if (this.x < 0 - this.width)
