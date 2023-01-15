@@ -83,6 +83,12 @@ class Raven
     }
 }
 
+const drawScore = () => 
+{
+    ctx.fillStyle = 'white'
+    ctx.fillText('Score: ' + score, 50, 75)
+}
+
 const raven = new Raven()
 
 const animate = (timestamp) => 
@@ -98,7 +104,9 @@ const animate = (timestamp) =>
         timeToNextRaven = 0
     }
 
-    [...ravens].forEach((object) => 
+    drawScore()
+
+    ravens.forEach((object) => 
     {
         object.update(deltaTime)
         object.draw()
@@ -110,10 +118,3 @@ const animate = (timestamp) =>
 }
 
 animate(0)
-
-const drawScore = () => 
-{
-
-}
-
-drawScore()
