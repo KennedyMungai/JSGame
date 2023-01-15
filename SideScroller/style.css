@@ -14,5 +14,5 @@ body {
 }
 
 #collisionCanvas {
-    background: crimson;
+    opacity: 0;
 }
