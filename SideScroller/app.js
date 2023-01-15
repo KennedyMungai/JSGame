@@ -110,3 +110,10 @@ const animate = (timestamp) =>
 }
 
 animate(0)
+
+const drawScore = () => 
+{
+
+}
+
+drawScore()
