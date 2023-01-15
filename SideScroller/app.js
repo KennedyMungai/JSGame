@@ -9,6 +9,7 @@ let ravens = []
 
 let timeToNextRaven = 0
 let ravenInterval = 500
+let lastTime = 0
 
 class Raven
 {
