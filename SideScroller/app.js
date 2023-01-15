@@ -73,8 +73,6 @@ class Raven
         {
             this.frame++
         }
-
-        console.log(deltaTime)
     }
 
     draw()
