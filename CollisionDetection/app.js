@@ -25,6 +25,7 @@ class Explosion
         this.image = new Image()
         this.image.src = '/CollisionDetection/images/boom.png'
         this.frame = 0
+        this.timer = 0
     }
 
     update()
@@ -48,6 +49,8 @@ window.addEventListener('click', (e) =>
 
 const animate = () => 
 {
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+
     for (let i = 0; i < explosions.length; i++)
     {
         explosions[i].update()
