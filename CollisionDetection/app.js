@@ -10,6 +10,8 @@ ctx.fillRect(50, 50, 100, 150)
 
 const explosions = []
 
+let canvasPosition = canvas.getBoundingClientRect()
+
 class Explosions
 {
     constructor(x, y)
@@ -35,3 +37,10 @@ class Explosions
         ctx.drawImage(this.image, this.spriteWidth * this.frame, 0, this.spriteWidth, this.spriteHeight, this.x, this.y, this.width, this.height)
     }
 }
+
+window.addEventListener('click', (e) =>
+{
+    console.log(e)
+    ctx.fillStyle = 'white'
+    ctx.fillRect(e.x - canvasPosition.left - 25, e.y - canvasPosition.top - 25, 50, 50)
+})
