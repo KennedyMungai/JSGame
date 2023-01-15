@@ -184,6 +184,14 @@ class Particle
             this.markedForDeletion = true
         }
     }
+
+    draw()
+    {
+        ctx.beginPath()
+        ctx.fillStyle = this.color
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
+        ctx.fill()
+    }
 }
 
 window.addEventListener('click', (e) =>
