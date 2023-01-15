@@ -125,6 +125,8 @@ class Explosion
         {
             this.frame++
 
+            this.timeSinceLastFrame = 0
+
             if (this.frame > 5)
             {
                 this.markedForDeletion = true
