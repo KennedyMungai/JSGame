@@ -99,6 +99,14 @@ class Explosion
     {
         this.image = new Image()
         this.image.src = '/SideScroller/images/boom.png'
+        this.spriteWidth = 200
+        this.spriteHeight = 179
+        this.size = size
+        this.x = x
+        this.y = y
+        this.frame = 0
+        this.sound = new Audio()
+        this.sound.src = '/SideScroller/SFX/'
     }
 }
 
