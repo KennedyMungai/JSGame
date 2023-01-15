@@ -42,7 +42,6 @@ const animate = (timestamp) =>
     let deltaTime = timestamp - lastTime
     lastTime = timestamp
     timeToNextRaven += deltaTime
-    console.log(deltaTime)
 
     requestAnimationFrame(animate)
 }
