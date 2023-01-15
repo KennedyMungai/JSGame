@@ -41,7 +41,6 @@ const animate = (timestamp) =>
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     let deltaTime = timestamp - lastTime
     lastTime = timestamp
-    console.log(timestamp)
 
     requestAnimationFrame(animate)
 }
