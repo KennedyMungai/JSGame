@@ -20,8 +20,8 @@ class Explosion
         this.y = y
         this.spriteWidth = 200
         this.spriteHeight = 179
-        this.width = this.spriteWidth * 0.5
-        this.height = this.spriteHeight * 0.5
+        this.width = this.spriteWidth * 0.7
+        this.height = this.spriteHeight * 0.7
         this.image = new Image()
         this.image.src = '/CollisionDetection/images/boom.png'
         this.frame = 0
