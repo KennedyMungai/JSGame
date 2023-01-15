@@ -63,6 +63,7 @@ const animate = (timestamp) =>
 
     ravens = ravens.filter((object) => !object.markedForDeletion)
 
+    console.log(ravens)
     requestAnimationFrame(animate)
 }
 
