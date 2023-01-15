@@ -48,5 +48,13 @@ window.addEventListener('click', (e) =>
 
 const animate = () => 
 {
+    for (let i = 0; i < explosions.length; i++)
+    {
+        explosions[i].update()
+        explosions[i].draw()
+    }
 
+    requestAnimationFrame(animate)
 }
+
+animate()
