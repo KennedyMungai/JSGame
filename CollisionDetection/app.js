@@ -12,5 +12,18 @@ const explosions = []
 
 class Explosions
 {
+    constructor(x, y)
+    {
+        this.x = x
+        this.y = y
+        this.spriteWidth = 200
+        this.spriteHeight = 179
+        this.width = this.spriteWidth * 0.5
+        this.height = this.spriteHeight * 0.5
+        this.image = new Image()
+        this.image.src = '/CollisionDetection/images/boom.png'
+        this.frame = 0
+    }
+
 
 }
