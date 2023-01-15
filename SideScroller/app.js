@@ -44,6 +44,18 @@ class Raven
 
         this.timeSinceFlap += deltaTime
 
+        if (this.timeSinceFlap > this.flapInterval)
+        {
+            if (this.frame > this.maxFrame)
+            {
+                this.frame = 0
+            }
+            else
+            {
+                this.frame++
+            }
+        }
+
         if (this.frame > this.maxFrame)
         {
             this.frame = 0
