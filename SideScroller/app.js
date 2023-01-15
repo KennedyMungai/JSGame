@@ -38,6 +38,11 @@ class Raven
         this.x -= this.directionX
         this.y += this.directionY
 
+        if (this.y < 0 || this.y > canvas.height)
+        {
+            this.directionY *= -1
+        }
+
         if (this.x < 0 - this.width)
         {
             this.markedForDeletion = true
