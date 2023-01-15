@@ -61,6 +61,8 @@ const animate = (timestamp) =>
         object.draw()
     })
 
+    ravens = ravens.filter((object) => !object.markedForDeletion)
+
     requestAnimationFrame(animate)
 }
 
