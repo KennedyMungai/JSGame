@@ -93,9 +93,13 @@ class Raven
 
 let explosions = []
 
-class Explosions
+class Explosion
 {
-
+    constructor(x, y, size)
+    {
+        this.image = new Image()
+        this.image.src = '/SideScroller/images/boom.png'
+    }
 }
 
 const drawScore = () => 
