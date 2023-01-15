@@ -27,6 +27,11 @@ class Raven
     update()
     {
         this.x -= this.directionX
+
+        if (this.x < 0 - this.width)
+        {
+            this.markedForDeletion = true
+        }
     }
 
     draw()
