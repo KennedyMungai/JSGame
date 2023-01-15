@@ -240,6 +240,12 @@ const animate = (timestamp) =>
     drawScore()
 
 
+    particles.forEach((object) =>
+    {
+        object.update(deltaTime)
+        object.draw()
+    })
+
     ravens.forEach((object) =>
     {
         object.update(deltaTime)
@@ -252,15 +258,9 @@ const animate = (timestamp) =>
         object.draw()
     })
 
-    particles.forEach((object) =>
-    {
-        object.update(deltaTime)
-        object.draw()
-    })
-
+    particles = particles.filter((object) => !object.markedForDeletion)
     ravens = ravens.filter((object) => !object.markedForDeletion)
     explosions = explosions.filter((object) => !object.markedForDeletion)
-    particles = particles.filter((object) => !object.markedForDeletion)
 
     if (!gameOver)
     {
