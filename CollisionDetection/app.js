@@ -26,11 +26,17 @@ class Explosion
         this.image.src = '/CollisionDetection/images/boom.png'
         this.frame = 0
         this.timer = 0
+        this.sound = new Audio()
         this.sound.src = '/CollisionDetection/SFX/boom.ogg'
     }
 
     update()
     {
+        if (this.frame === 0)
+        {
+            this.sound.play()
+        }
+
         this.timer++
 
         if (this.timer % 10 === 0)
