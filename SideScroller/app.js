@@ -85,8 +85,8 @@ class Raven
 
     draw()
     {
-        ctx.fillStyle = this.color
-        ctx.fillRect(this.x, this.y, this.width, this.height)
+        collisionCtx.fillStyle = this.color
+        collisionCtx.fillRect(this.x, this.y, this.width, this.height)
         ctx.drawImage(this.image, this.frame * this.spriteWidth, 0, this.spriteWidth, this.spriteHeight, this.x, this.y, this.width, this.height)
     }
 }
