@@ -8,6 +8,7 @@ canvas.height = window.innerHeight
 let ravens = []
 
 let timeToNextRaven = 0
+let ravenInterval = 500
 
 class Raven
 {
