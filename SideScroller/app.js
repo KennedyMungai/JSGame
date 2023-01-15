@@ -6,6 +6,7 @@ canvas.width = window.innerWidth
 canvas.height = window.innerHeight
 
 let ravens = []
+let score = 0
 
 let timeToNextRaven = 0
 let ravenInterval = 500
