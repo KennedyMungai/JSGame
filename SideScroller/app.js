@@ -116,6 +116,11 @@ const animate = (timestamp) =>
     {
         ravens.push(new Raven())
         timeToNextRaven = 0
+
+        ravens.sort((a, b) =>
+        {
+            return a.width - b.width
+        })
     }
 
     drawScore()
