@@ -33,6 +33,9 @@ class Raven
 const animate = (timestamp) => 
 {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
+    console.log('test')
+
+    requestAnimationFrame(animate)
 }
 
 animate()
