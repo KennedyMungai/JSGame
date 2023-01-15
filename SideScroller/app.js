@@ -210,7 +210,10 @@ const animate = (timestamp) =>
     ravens = ravens.filter((object) => !object.markedForDeletion)
     explosions = explosions.filter((object) => !object.markedForDeletion)
 
-    requestAnimationFrame(animate)
+    if (!gameOver)
+    {
+        requestAnimationFrame(animate)
+    }
 }
 
 animate(0)
