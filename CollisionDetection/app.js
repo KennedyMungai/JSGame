@@ -26,6 +26,7 @@ class Explosion
         this.image.src = '/CollisionDetection/images/boom.png'
         this.frame = 0
         this.timer = 0
+        this.sound.src = '/CollisionDetection/SFX/boom.ogg'
     }
 
     update()
