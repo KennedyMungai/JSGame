@@ -88,6 +88,12 @@ const drawScore = () =>
     ctx.fillText('Score: ' + score, 50, 75)
 }
 
+window.addEventListener('click', (e) =>
+{
+    const detectPixelColor = ctx.getImageData(e.x, e.y, 1, 1)
+    console.log(detectPixelColor.ImageData)
+})
+
 const raven = new Raven()
 
 const animate = (timestamp) => 
