@@ -36,6 +36,7 @@ class Raven
     update(deltaTime)
     {
         this.x -= this.directionX
+        this.y += this.directionY
 
         if (this.x < 0 - this.width)
         {
