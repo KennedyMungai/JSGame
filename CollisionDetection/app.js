@@ -30,6 +30,13 @@ class Explosion
 
     update()
     {
+        this.timer++
+
+        if (this.timer % 10 === 0)
+        {
+            this.frame++
+        }
+
         this.frame++
     }
 
