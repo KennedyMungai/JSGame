@@ -16,12 +16,12 @@ class Explosion
 {
     constructor(x, y)
     {
-        this.x = x
-        this.y = y
         this.spriteWidth = 200
         this.spriteHeight = 179
         this.width = this.spriteWidth * 0.7
         this.height = this.spriteHeight * 0.7
+        this.x = x - this.width / 2
+        this.y = y - this.height / 2
         this.image = new Image()
         this.image.src = '/CollisionDetection/images/boom.png'
         this.frame = 0
