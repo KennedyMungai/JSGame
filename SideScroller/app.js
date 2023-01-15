@@ -148,8 +148,11 @@ window.addEventListener('click', (e) =>
     {
         if (object.randomColors[0] === pc[0] && object.randomColors[1] === pc[1] && object.randomColors[2] === pc[2])
         {
+            // collision detected
             object.markedForDeletion = true
             score++
+            explosions.push(new Explosion(object.x, object.y, object.width))
+            console.log(explosions)
         }
     })
 })
