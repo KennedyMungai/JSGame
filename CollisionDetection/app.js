@@ -46,10 +46,10 @@ class Explosion
 
 window.addEventListener('click', (e) =>
 {
-    createAnimation()
+    createAnimation(e)
 })
 
-const createAnimation = () => 
+const createAnimation = (e) => 
 {
     let positionX = e.x - canvasPosition.left
     let positionY = e.y - canvasPosition.top
