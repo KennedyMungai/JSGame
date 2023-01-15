@@ -109,6 +109,7 @@ class Explosion
         this.sound.src = '/SideScroller/SFX/boom.ogg'
         this.timeSinceLastFrame = 0
         this.frameInterval = 200
+        this.markedForDeletion = false
     }
 
     update(deltaTime)
@@ -123,6 +124,11 @@ class Explosion
         if (this.timeSinceLastFrame > this.frameInterval)
         {
             this.frame++
+
+            if (this.frame > 5)
+            {
+                this.markedForDeletion = true
+            }
         }
     }
 
@@ -180,13 +186,11 @@ const animate = (timestamp) =>
 
     drawScore()
 
-    ravens.forEach((object) => 
-    {
-        object.update(deltaTime)
-        object.draw()
-    })
+    [...ravens, ...explosions].forEach(object => object.update(deltaTime))
+    [...ravens, ...explosions].forEach(object => object.draw())
 
     ravens = ravens.filter((object) => !object.markedForDeletion)
+    explosions = explosions.filter((object) => !object.markedForDeletion)
 
     requestAnimationFrame(animate)
 }
