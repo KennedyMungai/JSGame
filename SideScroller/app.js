@@ -91,6 +91,8 @@ class Raven
     }
 }
 
+let explosions = []
+
 const drawScore = () => 
 {
     ctx.fillStyle = 'white'
