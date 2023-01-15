@@ -186,8 +186,20 @@ const animate = (timestamp) =>
 
     drawScore()
 
-    [...ravens, ...explosions].forEach(object => object.update(deltaTime))
-    [...ravens, ...explosions].forEach(object => object.draw())
+    // [...ravens, ...explosions].forEach(object => object.update(deltaTime))
+    // [...ravens, ...explosions].forEach(object => object.draw())
+
+    ravens.forEach((object) =>
+    {
+        object.update(deltaTime)
+        object.draw()
+    })
+
+    explosions.forEach((object) =>
+    {
+        object.update(deltaTime)
+        object.draw()
+    })
 
     ravens = ravens.filter((object) => !object.markedForDeletion)
     explosions = explosions.filter((object) => !object.markedForDeletion)
