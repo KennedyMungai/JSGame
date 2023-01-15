@@ -12,7 +12,7 @@ const explosions = []
 
 let canvasPosition = canvas.getBoundingClientRect()
 
-class Explosions
+class Explosion
 {
     constructor(x, y)
     {
@@ -42,4 +42,6 @@ window.addEventListener('click', (e) =>
 {
     let positionX = e.x - canvasPosition.left
     let positionY = e.y - canvasPosition.top
+
+    explosions.push(new Explosion(positionX, positionY))
 })
