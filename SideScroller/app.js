@@ -7,6 +7,8 @@ canvas.height = window.innerHeight
 
 let ravens = []
 
+let timeToNextRaven = 0
+
 class Raven
 {
     constructor()
