@@ -27,6 +27,8 @@ class Raven
         this.markedForDeletion = false
         this.image = new Image()
         this.image.src = '/SideScroller/images/raven.png'
+        this.frame = 0
+        this.maxFrame = 4
     }
 
     update()
