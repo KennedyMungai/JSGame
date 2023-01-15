@@ -11,6 +11,7 @@ let score = 0
 let timeToNextRaven = 0
 let ravenInterval = 500
 let lastTime = 0
+ctx.font = '50px Helvetica'
 
 class Raven
 {
