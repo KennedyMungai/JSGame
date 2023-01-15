@@ -36,8 +36,6 @@ class Explosion
         {
             this.frame++
         }
-
-        this.frame++
     }
 
     draw()
