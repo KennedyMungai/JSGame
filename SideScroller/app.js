@@ -39,6 +39,15 @@ class Raven
         {
             this.markedForDeletion = true
         }
+
+        if (this.frame > this.maxFrame)
+        {
+            this.frame = 0
+        }
+        else
+        {
+            this.frame++
+        }
     }
 
     draw()
