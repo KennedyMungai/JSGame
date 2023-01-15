@@ -154,6 +154,7 @@ const drawScore = () =>
 
 const drawGameOver = () => 
 {
+    ctx.textAlign = 'center'
     ctx.fillStyle = 'black'
     ctx.fillText('GAME OVER, your score is ' + score, canvas.width / 2, canvas.height / 2)
 }
