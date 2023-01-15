@@ -45,3 +45,8 @@ window.addEventListener('click', (e) =>
 
     explosions.push(new Explosion(positionX, positionY))
 })
+
+const animate = () => 
+{
+
+}
