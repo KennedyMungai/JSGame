@@ -22,6 +22,8 @@ class Raven
         this.directionX = Math.random() * 5 + 3
         this.directionY = Math.random() * 5 - 2.5
         this.markedForDeletion = false
+        this.image = new Image()
+        this.image.src = '/SideScroller/images/raven.png'
     }
 
     update()
