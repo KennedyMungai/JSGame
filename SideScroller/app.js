@@ -106,7 +106,7 @@ class Explosion
         this.y = y
         this.frame = 0
         this.sound = new Audio()
-        this.sound.src = '/SideScroller/SFX/'
+        this.sound.src = '/SideScroller/SFX/boom.ogg'
     }
 }
 
