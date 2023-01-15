@@ -7,3 +7,5 @@ canvas.height = 700
 
 ctx.fillStyle = 'white'
 ctx.fillRect(50, 50, 100, 150)
+
+const explosions = []
