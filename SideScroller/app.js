@@ -71,16 +71,21 @@ class Raven
                 this.frame++
             }
 
+            if (this.frame > this.maxFrame)
+            {
+                this.frame = 0
+            }
+            else
+            {
+                this.frame++
+            }
+
             this.timeSinceFlap = 0
         }
 
-        if (this.frame > this.maxFrame)
+        if (this.x < 0 - this.width)
         {
-            this.frame = 0
-        }
-        else
-        {
-            this.frame++
+            gameOver = true
         }
     }
 
