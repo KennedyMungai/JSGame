@@ -49,7 +49,7 @@ const animate = (timestamp) =>
         timeToNextRaven = 0
     }
 
-    [...ravens].forEach(object => 
+    [...ravens].forEach((object) => 
     {
         object.update()
         object.draw()
