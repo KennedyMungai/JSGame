@@ -21,6 +21,7 @@ class Raven
         this.y = Math.random() * (canvas.height - this.height)
         this.directionX = Math.random() * 5 + 3
         this.directionY = Math.random() * 5 - 2.5
+        this.markedForDeletion = false
     }
 
     update()
