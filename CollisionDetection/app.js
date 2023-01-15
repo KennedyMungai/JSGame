@@ -40,7 +40,6 @@ class Explosions
 
 window.addEventListener('click', (e) =>
 {
-    console.log(e)
     ctx.fillStyle = 'white'
     ctx.fillRect(e.x - canvasPosition.left - 25, e.y - canvasPosition.top - 25, 50, 50)
 })
