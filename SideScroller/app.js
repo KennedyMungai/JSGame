@@ -47,10 +47,8 @@ const animate = (timestamp) =>
     {
         ravens.push(new Raven())
         timeToNextRaven = 0
-        console.log(ravens)
     }
 
-    console.log(timestamp)
     requestAnimationFrame(animate)
 }
 
