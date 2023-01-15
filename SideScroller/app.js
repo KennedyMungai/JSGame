@@ -186,8 +186,6 @@ const animate = (timestamp) =>
 
     drawScore()
 
-    // [...ravens, ...explosions].forEach(object => object.update(deltaTime))
-    // [...ravens, ...explosions].forEach(object => object.draw())
 
     ravens.forEach((object) =>
     {
