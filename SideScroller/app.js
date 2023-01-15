@@ -42,6 +42,8 @@ class Raven
             this.markedForDeletion = true
         }
 
+        this.timeSinceFlap += deltaTime
+
         if (this.frame > this.maxFrame)
         {
             this.frame = 0
