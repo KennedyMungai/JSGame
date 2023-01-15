@@ -32,6 +32,6 @@ class Explosions
 
     draw()
     {
-        ctx.drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh)
+        ctx.drawImage(this.image, this.spriteWidth * this.frame, 0, this.spriteWidth, this.spriteHeight, this.x, this.y, this.width, this.height)
     }
 }
