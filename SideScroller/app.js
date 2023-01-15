@@ -50,7 +50,8 @@ const animate = (timestamp) =>
         console.log(ravens)
     }
 
+    console.log(timestamp)
     requestAnimationFrame(animate)
 }
 
-animate()
+animate(0)
