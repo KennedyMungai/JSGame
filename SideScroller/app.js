@@ -31,7 +31,7 @@ class Raven
         this.maxFrame = 4
     }
 
-    update()
+    update(deltaTime)
     {
         this.x -= this.directionX
 
@@ -48,6 +48,8 @@ class Raven
         {
             this.frame++
         }
+
+        console.log(deltaTime)
     }
 
     draw()
@@ -73,7 +75,7 @@ const animate = (timestamp) =>
 
     [...ravens].forEach((object) => 
     {
-        object.update()
+        object.update(deltaTime)
         object.draw()
     })
 
