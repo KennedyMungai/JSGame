@@ -29,6 +29,7 @@ class Raven
         this.image.src = '/SideScroller/images/raven.png'
         this.frame = 0
         this.maxFrame = 4
+        this.timeSinceFlap = 0
     }
 
     update(deltaTime)
