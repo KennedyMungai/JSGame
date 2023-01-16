@@ -9,7 +9,7 @@ class Game
 {
     constructor()
     {
-
+        this.enemies = []
     }
 
     update()
