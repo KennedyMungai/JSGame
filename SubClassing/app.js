@@ -27,3 +27,21 @@ class Game
 
     }
 }
+
+class Enemy 
+{
+    constructor()
+    {
+
+    }
+
+    update()
+    {
+
+    }
+
+    draw()
+    {
+
+    }
+}
