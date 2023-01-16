@@ -21,4 +21,9 @@ class Game
     {
 
     }
+
+    #addNewEnemy()
+    {
+
+    }
 }
