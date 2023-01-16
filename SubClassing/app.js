@@ -45,3 +45,11 @@ class Enemy
 
     }
 }
+
+const animate = () => 
+{
+
+    requestAnimationFrame(animate)
+}
+
+animate()
